@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>codebar meetup</title>
+    <script type="text/javascript" src="src/Converter.js">
+    </script>
+  </head>
+  <body>
+    <h3>Temperature converter</h3>
+    <form>
+      Fahrenheit to Celius<br>
+      <input type="text" name="fahrenheit">
+      <button id="fahrenheit" onclick="handleClick()">Calculate</button>
+      <p name="fahrenheit"></p>
+    </form>
+
+    <script type="text/javascript">
+      function handleClick() {
+        event.preventDefault()
+        var valueToConvert = document.getElementsByName("fahrenheit")[0].value
+        var result = convertFahrenheitToCelsius(valueToConvert)
+
+        document.getElementsByName("fahrenheit")[1].innerHTML = result + " C"
+        console.log(result)
+        return false
+      }
+    </script>
+  </body>
+</html>
