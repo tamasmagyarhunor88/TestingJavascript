@@ -33,3 +33,15 @@ function convertGallonsToLitres(liquid) {
 
   return litres
 }
+
+function convertMilesToKilometres(distance) {
+  var kilometres = (distance * 1.609).toFixed(1)
+
+  return kilometres
+}
+
+function convertKilometersToMiles(distance) {
+  var miles = (distance * 0.621371192).toFixed(1)
+
+  return miles
+}

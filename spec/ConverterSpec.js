@@ -45,4 +45,18 @@ describe("Cooking Ingredients Converter", function() {
       expect(result).toEqual('154.6')
     })
   })
+
+  describe("Distance", function () {
+    it('Miles to Kilometers', function() {
+      var result = convertMilesToKilometres(123)
+
+      expect(result).toEqual('197.9')
+    })
+
+    it('Kilometres to Miles', function() {
+      var result = convertKilometersToMiles(34)
+
+      expect(result).toEqual('21.1')
+    })
+  })
 });
